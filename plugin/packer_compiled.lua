@@ -74,6 +74,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "C:\\Users\\Nifie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coq.artifacts",
+    url = "https://github.com/ms-jpg/coq.artifacts"
+  },
+  coq_nvim = {
+    loaded = true,
+    path = "C:\\Users\\Nifie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coq_nvim",
+    url = "https://github.com/ms-jpg/coq_nvim"
+  },
   ["kanagawa.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Nifie\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa.nvim",
