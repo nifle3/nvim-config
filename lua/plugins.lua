@@ -16,10 +16,8 @@ return require('lazy').setup({
   'neovim/nvim-lspconfig',
   {
     'nvim-treesitter/nvim-treesitter',
-    build = function()
-      require('nvim-treesitter.install').update({ with_sync = true })()
-    end,
-  },
+	build = ':TSUpdate'  
+ },
   'nvim-tree/nvim-web-devicons',
   {
     'nvim-tree/nvim-tree.lua',
@@ -30,11 +28,13 @@ return require('lazy').setup({
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   {
-    'ms-jpg/coq_nvim',
-    branch = 'coq',
-  },
-  {
-    'ms-jpg/coq.artifacts',
-    branch = 'artifacts',
-  },
+	'nvim-telescope/telescope.nvim',
+	tag = '0.1.8',
+	dependencies = { 
+		'nvim-lua/plenary.nvim',
+		{
+			'nvim-telescope/telescope-fzf-native.nvim', 
+		}
+	},
+  }
 })

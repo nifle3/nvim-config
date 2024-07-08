@@ -1,4 +1,4 @@
-vim.api.nvim_set_keymap('n', '<C-t>', ':NvimTreeToggle<CR>', {
-	noremap = true,
-	silent = true,
-})
+vim.g.mapleader = ' '
+
+require('hotkeys.nvimtree')
+require('hotkeys.telescope_hotkeys')
